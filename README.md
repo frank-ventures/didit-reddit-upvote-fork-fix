@@ -49,6 +49,8 @@ The project is a work in progress and is not yet complete.
 
 # Frankies Fixes and Trail of Test
 
+The point of this project was that [the initial version we cloned was broken in a few places](https://github.com/shaunchurch/didit-reddit-upvote-example) and needed testing, fixing and once "working", some stretch goals implemented.
+
 ## Setup
 
 - First, after making a fork and getting everything cloned down, I setup the .env.local. This process was simple enough to do by following the video guide by the Senior Dev. I also used `npx auth secret` to generate a secret for the `AUTH_SECRET` variable.
@@ -56,3 +58,7 @@ The project is a work in progress and is not yet complete.
 - I set up a database on Supabase, copied the connection string over and then tested the code on my localhost.
 
 ## Vercel
+
+- Deploying to Vercel was the next step. The deployment ran with zero errors 👀 (but one warning recommending against using <img>)
+
+- The first bug was trying to log in to the deployed site.
