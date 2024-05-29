@@ -89,3 +89,11 @@ After basic deployment to Vercel, it was time to play around with the project an
 - I then made an error page which displayed if a user tries to vote on a post without being logged in:
 
 ![error message](public/didit-error-1.png)
+
+This wasn't as straightforwards as throwing an error and using a global error page, as when deployed on Vercel Next.js didn't allow server-side error messages to be rendered to the user.
+
+I got around this by simply redirecting to a custom error page instead.
+
+- I created a loading page with a [LDRS](https://uiball.com/ldrs/) spinner to give the user some feedback that things were happening in the background
+
+- I added dynamic metadata to the individual posts pages, so that the post title displayed in the browser tab.
