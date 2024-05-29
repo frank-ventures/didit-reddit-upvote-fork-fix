@@ -84,6 +84,7 @@ export function LoginButton() {
   return <button onClick={() => signIn()}>Sign In</button>;
 }
 ```
+This sorted out the error!
 
 ## Playtimes
 
