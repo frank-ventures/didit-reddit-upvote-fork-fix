@@ -67,7 +67,7 @@ The point of this project was that [the initial version we cloned was broken in 
 
 ## Vercel
 
-- Deploying to Vercel was the next step. The deployment ran with zero errors 👀 (but one warning recommending against using <img>)
+- Deploying to Vercel was the next step. The deployment ran with zero errors 👀 (but one warning recommending against using img tags)
 
 - The first bug was trying to log in to the deployed site. The issue was when you clicked "Log in" you were shown a 404 page. However, when you refreshed, the button to "Log In" to your GitHub account would show.
 
