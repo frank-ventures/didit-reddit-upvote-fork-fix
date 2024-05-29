@@ -102,6 +102,6 @@ This wasn't as straightforwards as throwing an error and using a global error pa
 
 I got around this by simply redirecting to a custom error page instead.
 
-- I created a loading page with a [LDRS](https://uiball.com/ldrs/) spinner to give the user some feedback that things were happening in the background
+- I created a loading page with a [LDRS](https://uiball.com/ldrs/) spinner to give the user some feedback that things were happening in the background. However, there was trouble at Build time and there were errors in rendering the loaders so I took them out for now! But the loading page displays.
 
 - I added dynamic metadata to the individual posts pages, so that the post title displayed in the browser tab.
