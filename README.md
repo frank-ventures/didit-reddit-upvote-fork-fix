@@ -46,3 +46,13 @@ The project is a work in progress and is not yet complete.
 - [ ] User following
 - [ ] User feed (posts from users you follow)
 - [ ] User flair
+
+# Frankies Fixes and Trail of Test
+
+## Setup
+
+- First, after making a fork and getting everything cloned down, I setup the .env.local. This process was simple enough to do by following the video guide by the Senior Dev. I also used `npx auth secret` to generate a secret for the `AUTH_SECRET` variable.
+
+- I set up a database on Supabase, copied the connection string over and then tested the code on my localhost.
+
+## Vercel
