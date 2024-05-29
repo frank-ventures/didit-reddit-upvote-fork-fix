@@ -11,6 +11,7 @@
   "dependencies": {
     "@auth/pg-adapter": "^0.2.14",
     "clsx": "^2.1.0",
+    "ldrs": "^1.0.2",
     "next": "^14.2.3",
     "next-auth": "^5.0.0-beta.18",
     "pg": "^8.11.3",
