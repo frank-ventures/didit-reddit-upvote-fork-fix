@@ -22,7 +22,7 @@ export async function PostList({ currentPage = 1 }) {
         {posts.map((post) => (
           <li
             key={post.id}
-            className=" py-4 flex space-x-6 hover:bg-zinc-200 rounded-lg"
+            className="border shadow py-4 mb-4 flex space-x-6 hover:bg-zinc-200 rounded-lg"
           >
             <Vote postId={post.id} votes={post.vote_total} />
             <div>

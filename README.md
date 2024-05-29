@@ -61,4 +61,31 @@ The point of this project was that [the initial version we cloned was broken in 
 
 - Deploying to Vercel was the next step. The deployment ran with zero errors 👀 (but one warning recommending against using <img>)
 
-- The first bug was trying to log in to the deployed site.
+- The first bug was trying to log in to the deployed site. The issue was when you clicked "Log in" you were shown a 404 page. However, when you refreshed, the button to "Log In" to your GitHub account would show.
+
+I spent a good couple of hours chasing leads on this bug trying to fix it. Quite a lot of [unfruitful](https://github.com/nextauthjs/next-auth/issues/10585) [Google](https://github.com/nextauthjs/next-auth/issues/6981) [searches](https://stackoverflow.com/questions/67715077/next-auth-receiving-404-after-login-attempt-in-deployed-vercel-application) occured, which showed other people having the same issues.
+
+To get to a solution, I stepped through the [Auth.js docs](https://authjs.dev), ensured my local files matched the guidance in the docs, and then tried changing my Login Button to a Client Component, from a Server Component:
+
+```javascript
+"use client";
+
+import { signIn } from "next-auth/react";
+
+export function LoginButton() {
+  return <button onClick={() => signIn()}>Sign In</button>;
+}
+```
+
+## Playtimes
+
+After basic deployment to Vercel, it was time to play around with the project and fix up a few things here and there.
+
+- First thing was to make a distinction between posts on the home page. Nothing major, just a little bit of UI niceness:
+
+![posts before](public/didit-post-1.png)
+![posts after](public/didit-post-2.png)
+
+- I then made an error page which displayed if a user tries to vote on a post without being logged in:
+
+![error message](public/didit-error-1.png)
