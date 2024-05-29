@@ -1,4 +1,12 @@
-## Upvote
+# Week Eleven Project _(Kind of!)_
+
+## Upvote - A reddit clone _(which we needed to fix)_
+
+**Link to project:** [Link](https://frankies-forkit.vercel.app/)
+
+**Please scroll down to "Frankies Fixes and Trail of Test" for my edits and methods**
+
+---
 
 Upvote is a Reddit-esque web application that allows users to create posts, upvote and downvote posts, and comment on posts in a multi-threaded, nested list.
 
